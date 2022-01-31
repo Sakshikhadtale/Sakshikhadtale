@@ -83,7 +83,7 @@ html, body {
 }
 
 body {
-    background: #0a0809;
+    background: #000000;
     font-family: "librebaskerville-regular", serif;
     font-size: 1.6rem;
     line-height: 1.875;
@@ -132,7 +132,7 @@ h1, .h01, h2, .h02, h3, .h03, h4, .h04 {
 }
 
 @media only screen and (max-width: 600px) {
-    h1, .h01, h2, .h02, h3, .h03, h4, .h04 {
+    h1, .h01, h2, h3, .h02, .h03, h4, .h04 {
         margin-top: 5.1rem;
     }
 }
@@ -200,7 +200,8 @@ p.lead {
     font-size: 2rem;
     line-height: 1.8;
     margin-bottom: 3.6rem;
-    color: #0D0A0B;
+    color: #000000;
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -350,6 +351,11 @@ ul {
 
 li {
     display: list-item;
+}
+
+h7 {
+    font-size: 4rem;
+    color: #862121;
 }
 
 ol, ul {
@@ -1460,10 +1466,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .s-header {
     width: 100%;
     height: 72px;
-    background-color: transparent;
+    background-color: black;
     position: absolute;
     top: 0;
     z-index: 500;
+    padding: 5.5rem 3rem 3rem 0rem;
 }
 
 .s-header.offset {
@@ -1540,8 +1547,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: none;
     position: absolute;
     right: 29px;
-    top: 18px;
-    height: 42px;
+    top: 35px;
+    height: 3rem;
     width: 42px;
     line-height: 42px;
     font-family: "montserrat-regular", sans-serif;
@@ -1775,7 +1782,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .home-content h3 {
     font-family: "montserrat-bold", sans-serif;
     font-size: 1.8rem;
-    color: #862121;
+    color: #ffd0d0;
     text-transform: uppercase;
     letter-spacing: .5rem;
     position: relative;
@@ -1789,7 +1796,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     content: "";
     width: 60px;
     height: 2px;
-    background-color: #862121;
+    background-color: #ffd0d0;
     margin-top: -1.5px;
     position: absolute;
     left: 0;
@@ -2197,7 +2204,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-about {
-    padding-top: 15rem;
+    padding-top: 5rem;
     padding-bottom: 9rem;
     background-color: #FFFFFF;
     position: relative;
@@ -3040,8 +3047,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-contact {
-    background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-color: #333333;
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 13.2rem;
@@ -4136,4 +4142,11 @@ article.blog-single .blog-content {
     .commentlist .comment__avatar {
         display: none;
     }
+}
+
+.designation {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-family: "librebaskerville-bold", serif;
 }
